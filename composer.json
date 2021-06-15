@@ -1,0 +1,24 @@
+{
+  "name": "tochka-developers/jsonrpc-annotations",
+  "description": "Annotations for JsonRpc and OpenRpc",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavel Babushkin",
+      "email": "darkdarin@tochka.com"
+    }
+  ],
+  "keywords": [
+    "jsonrpc",
+    "openrpc",
+    "laravel"
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tochka\\JsonRpc\\": "src/"
+    }
+  }
+}
