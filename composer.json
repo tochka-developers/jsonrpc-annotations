@@ -15,7 +15,11 @@
     ],
     "require": {
         "php": ">=7.4",
+        "doctrine/annotations": "^1.11",
         "spiral/attributes": "^2.8"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
     },
     "autoload": {
         "psr-4": {
