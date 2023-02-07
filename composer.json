@@ -1,6 +1,6 @@
 {
     "name": "tochka-developers/jsonrpc-annotations",
-    "description": "Annotations for JsonRpc and OpenRpc",
+    "description": "Default annotations/attributes for ",
     "license": "MIT",
     "authors": [
         {
@@ -10,20 +10,29 @@
     ],
     "keywords": [
         "jsonrpc",
-        "openrpc",
-        "laravel"
+        "openrpc"
     ],
     "require": {
-        "php": ">=7.4",
+        "php": "8.0.*|8.1.*|8.2.*",
         "doctrine/annotations": "^1.11",
         "spiral/attributes": "^2.8"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-latest"
+        "laravel/pint": "^1.1",
+        "roave/security-advisories": "dev-latest",
+        "vimeo/psalm": "^5.6"
     },
     "autoload": {
         "psr-4": {
             "Tochka\\JsonRpc\\": "src/"
         }
+    },
+    "scripts": {
+        "lint": "pint --test",
+        "lint-fix": "pint",
+        "analyze": "psalm --no-cache",
+        "analyze-8.0": "psalm --php-version=8.0 --output-format=github --shepherd",
+        "analyze-8.1": "psalm --php-version=8.1 --output-format=github --shepherd",
+        "analyze-8.2": "psalm --php-version=8.2 --output-format=github --shepherd"
     }
 }

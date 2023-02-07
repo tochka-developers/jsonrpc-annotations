@@ -13,21 +13,21 @@ use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
  * @NamedArgumentConstructor
  */
 #[\Attribute(\Attribute::TARGET_PROPERTY)]
-class ApiExpectedValues implements ApiAnnotationInterface
+class TimeZone implements ApiAnnotationInterface
 {
-    public array $values = [];
+    public string $timezone;
 
-    public function __construct(array $values)
+    public function __construct(string $timezone)
     {
-        $this->values = $values;
+        $this->timezone = $timezone;
     }
 
     /**
-     * @param array{values: array} $array
+     * @param array{timezone: string} $array
      * @return self
      */
     public static function __set_state(array $array): self
     {
-        return new self($array['values']);
+        return new self($array['timezone']);
     }
 }

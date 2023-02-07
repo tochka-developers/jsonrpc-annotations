@@ -9,10 +9,10 @@ use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
  * @psalm-api
  *
  * @Annotation
- * @Target({"CLASS", "METHOD"})
+ * @Target({"PROPERTY"})
  * @NamedArgumentConstructor
  */
-#[\Attribute(\Attribute::TARGET_CLASS | \Attribute::TARGET_METHOD)]
-class ApiIgnore implements ApiAnnotationInterface
+#[\Attribute(\Attribute::TARGET_PROPERTY)]
+class Sometimes implements ApiAnnotationInterface
 {
 }
