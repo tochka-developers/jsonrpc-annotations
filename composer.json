@@ -15,7 +15,7 @@
     "require": {
         "php": "8.0.*|8.1.*|8.2.*|8.3.*",
         "doctrine/annotations": "^1.11",
-        "spiral/attributes": "^2.8"
+        "spiral/attributes": "^2.8|^3.0"
     },
     "require-dev": {
         "laravel/pint": "^1.1",
