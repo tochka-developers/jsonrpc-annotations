@@ -13,6 +13,4 @@ use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
  * @NamedArgumentConstructor
  */
 #[\Attribute(\Attribute::TARGET_CLASS | \Attribute::TARGET_METHOD)]
-class ApiIgnore implements ApiAnnotationInterface
-{
-}
+class ApiIgnore implements ApiAnnotationInterface {}
