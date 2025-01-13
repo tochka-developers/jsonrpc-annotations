@@ -13,6 +13,7 @@ use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
  * @NamedArgumentConstructor
  */
 #[\Attribute(\Attribute::TARGET_PROPERTY)]
+#[NamedArgumentConstructor]
 class TimeZone implements ApiAnnotationInterface
 {
     public string $timezone;

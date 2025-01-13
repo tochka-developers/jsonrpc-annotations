@@ -13,6 +13,7 @@ use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
  * @NamedArgumentConstructor
  */
 #[\Attribute(\Attribute::TARGET_PROPERTY | \Attribute::TARGET_METHOD)]
+#[NamedArgumentConstructor]
 class ApiValueExample implements ApiAnnotationInterface
 {
     public array $examples;

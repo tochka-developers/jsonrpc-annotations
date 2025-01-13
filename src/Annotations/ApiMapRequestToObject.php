@@ -13,6 +13,7 @@ use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
  * @NamedArgumentConstructor
  */
 #[\Attribute(\Attribute::TARGET_METHOD)]
+#[NamedArgumentConstructor]
 class ApiMapRequestToObject implements ApiAnnotationInterface
 {
     public string $parameterName;

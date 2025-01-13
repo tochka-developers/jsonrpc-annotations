@@ -13,6 +13,7 @@ use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
  * @NamedArgumentConstructor
  */
 #[\Attribute(\Attribute::TARGET_CLASS | \Attribute::TARGET_METHOD | \Attribute::TARGET_PROPERTY | \Attribute::IS_REPEATABLE)]
+#[NamedArgumentConstructor]
 class ValidationRule implements ApiAnnotationInterface
 {
     public string $rule;

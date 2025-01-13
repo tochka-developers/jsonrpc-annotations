@@ -13,6 +13,7 @@ use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
  * @NamedArgumentConstructor
  */
 #[\Attribute(\Attribute::TARGET_CLASS | \Attribute::IS_REPEATABLE)]
+#[NamedArgumentConstructor]
 class ApiIgnoreMethod implements ApiAnnotationInterface
 {
     public string $name;
