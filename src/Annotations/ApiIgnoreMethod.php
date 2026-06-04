@@ -11,6 +11,7 @@ use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
  * @Annotation
  * @Target({"CLASS"})
  * @NamedArgumentConstructor
+ * @psalm-suppress DeprecatedClass
  */
 #[\Attribute(\Attribute::TARGET_CLASS | \Attribute::IS_REPEATABLE)]
 #[NamedArgumentConstructor]

@@ -11,6 +11,7 @@ use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
  * @Annotation
  * @Target({"CLASS", "METHOD"})
  * @NamedArgumentConstructor
+ * @psalm-suppress DeprecatedClass
  */
 #[\Attribute(\Attribute::TARGET_CLASS | \Attribute::TARGET_METHOD)]
 #[NamedArgumentConstructor]
