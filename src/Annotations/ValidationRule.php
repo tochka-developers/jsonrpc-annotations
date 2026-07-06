@@ -2,7 +2,7 @@
 
 namespace Tochka\JsonRpc\Annotations;
 
-use Spiral\Attributes\NamedArgumentConstructor;
+use Doctrine\Common\Annotations\Annotation\NamedArgumentConstructor;
 use Tochka\JsonRpc\Contracts\ApiAnnotationInterface;
 
 /**

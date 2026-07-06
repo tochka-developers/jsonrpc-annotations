@@ -13,14 +13,14 @@
         "openrpc"
     ],
     "require": {
-        "php": "8.1.*|8.2.*|8.3.*|8.4.*",
-        "doctrine/annotations": "^1.11",
+        "php": "^8.1",
+        "doctrine/annotations": "^1.11|^2.0",
         "spiral/attributes": "^2.8|^3.0"
     },
     "require-dev": {
         "laravel/pint": "^1.19",
         "roave/security-advisories": "dev-latest",
-        "vimeo/psalm": "^5.26"
+        "vimeo/psalm": "^5.26|^6.0"
     },
     "autoload": {
         "psr-4": {
@@ -31,9 +31,11 @@
         "lint": "pint --test",
         "lint-fix": "pint",
         "analyze": "psalm --no-cache",
-        "analyze-8.0": "psalm --php-version=8.0 --output-format=github --shepherd",
         "analyze-8.1": "psalm --php-version=8.1 --output-format=github --shepherd",
         "analyze-8.2": "psalm --php-version=8.2 --output-format=github --shepherd",
+        "analyze-8.3": "psalm --php-version=8.3 --output-format=github --shepherd",
+        "analyze-8.4": "psalm --php-version=8.4 --output-format=github --shepherd",
+        "analyze-8.5": "psalm --php-version=8.5 --output-format=github --shepherd",
         "pint": "vendor/bin/pint",
         "psalm": "vendor/bin/psalm --output-format=phpstorm --no-cache"
     }
